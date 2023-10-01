@@ -3,7 +3,6 @@
 from os import path
 import os,base64,zlib,pip,urllib
 os.system("clear")
-		print(logo)
 		print("\t \033[1;32m First Get Approvel\033[1;37m ")
 		time.sleep(1)
 		os.system("clear")
