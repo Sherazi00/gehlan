@@ -261,42 +261,6 @@ def menu():
                                                         crack_submit.submit(api,ids,names,passlist)
                                                 else:
                                                         crack_submit.submit(api1,ids,names,passlist)
-                                print('\033[1;37m')
-                                linex()
-                                print(' The process has completed')
-                                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
-                                linex()
-                                input(' Press enter to back ')
-                                os.system('python KING.py')
-                        elif xd in ['2','02']:
-                                import dump
-                                dump.Main()
-                        elif xd in ['3','03']:
-                                public()
-                        elif xd in ['4','04']:
-                                clear()
-                                print(' [1] Pakistan cloning\n [2] Bangladesh cloning\n [3] Gmail cloning\n [0] Back menu')
-                                linex()
-                                x=input(' Choose: ')
-                                if x in ['1','01']:
-                                        pak()
-                                elif x in ['2','02']:
-                                        bd()
-                                elif x in ['3','03']:
-                                        gmail()
-                                else:
-                                        menu()
-                        elif xd in ['5','05']:
-                                gmail()
-                        elif xd in ['6','06']:
-                                wx=('EwRNlHx9bgJ0HL5fpVXP3K')
-                                os.system(f'xdg-open https://chat.whatsapp.com/{wx}');menu()
-                        elif xd in ['7','07']:
-                                os.system('xdg-open https://youtube.com/@ZLOG-cp4oq?si=nMlJ1bHPKnA6y-hR');menu()
-                        elif xd in ['8','08']:
-                                os.system('xdg-open https://www.facebook.com/groups/1088998525405746/?ref=share');menu()
-                        elif xd in ['0','00']:
-                                exit(' Thanks for use 🥰 ')
                        	else:
 		os.system("clear")
 		print(logo)
